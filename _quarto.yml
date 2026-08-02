@@ -21,6 +21,8 @@ website:
     right:
       - icon: github
         href: https://github.com/jcludlum
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jcludlum/
       - icon: envelope
         href: mailto:john.ludlum2@gmail.com
 
