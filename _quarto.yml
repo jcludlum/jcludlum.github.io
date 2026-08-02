@@ -8,6 +8,7 @@ website:
   site-url: "https://jcludlum.github.io"
 
   navbar:
+    title: false
     left:
       - text: About
         href: index.qmd
