@@ -1,0 +1,13 @@
+---
+title: "Art"
+---
+
+<!--
+Add images to an `art/` folder and reference them here, e.g.:
+
+::: {layout-ncol=2}
+![Piece One](art/piece-one.jpg)
+
+![Piece Two](art/piece-two.jpg)
+:::
+-->

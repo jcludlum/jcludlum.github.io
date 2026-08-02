@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "John Ludlum"
+  description: "Applied Research Mathematician"
+  site-url: "https://jcludlum.github.io"
+
+  navbar:
+    left:
+      - text: About
+        href: index.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Blog
+        href: blog/index.qmd
+      - text: Art
+        href: art.qmd
+    right:
+      - icon: github
+        href: https://github.com/jcludlum
+      - icon: envelope
+        href: mailto:john.ludlum2@gmail.com
+
+  page-footer:
+    left: "© 2026 John Ludlum"
+    right:
+      - icon: rss
+        href: blog/index.xml
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    grid:
+      body-width: 850px
