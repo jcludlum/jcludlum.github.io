@@ -26,6 +26,11 @@ open-ended problems involving document summarization,
 information extraction, and predictive modeling.
 :::
 
+## Education
+
+- **Western Governors University** — M.S. Data Analytics (June 2021)
+- **University of Utah** — B.S. Mathematics, B.A. Art History, French Minor (May 2019)
+
 ## Research Interests
 
 - **Deep Learning:** transformers, embedding models, autoencoders, diffusion models
@@ -40,6 +45,10 @@ information extraction, and predictive modeling.
 - **DevOps:** Docker, Kubernetes, GitLab CI/CD
 - **AI Technologies:** OpenAI API, LangChain, LlamaIndex, FastMCP, AutoGen, Inspect AI, Harbor, Claude Code
 
+## Resume + CV
+
+Available upon [request](mailto:john.ludlum2@gmail.com).
+
 ## Hobbies
 
 - Hiking
@@ -50,10 +59,6 @@ information extraction, and predictive modeling.
 - Chess (OTB, [chess.com](https://www.chess.com/member/jayludz), [Lichess](https://lichess.org/@/JayLudZ))
 - Go (OTB, [OGS](https://online-go.com/player/611010/))
 - Scrabble
-
-## Resume + CV
-
-Available upon [request](mailto:john.ludlum2@gmail.com).
 
 ## AI Policy
 
