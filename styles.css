@@ -1,1 +1,12 @@
 /* Add custom site styles here. */
+
+.about-intro {
+  overflow: hidden; /* clearfix so the floated photo doesn't bleed past the intro paragraph */
+}
+
+.about-photo {
+  float: right;
+  width: 160px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 8px;
+}
