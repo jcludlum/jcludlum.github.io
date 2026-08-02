@@ -55,7 +55,8 @@ information extraction, and predictive modeling.
 
 Available upon [request](mailto:john.ludlum2@gmail.com).
 
-::: {.callout-note title="AI Policy"}
+## AI Policy
+
 I am a proponent of using AI tools to boost productivity as long as they
 are used responsibly and transparently.
 
@@ -65,4 +66,3 @@ Usage is always attributed in commit messages and project documentation.
 
 I do *not* use AI for tasks that reflect my own critical thinking and
 creative ability, such as writing blog posts or making art.
-:::
