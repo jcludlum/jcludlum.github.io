@@ -3,11 +3,70 @@ title: "Art"
 ---
 
 <!--
-Add images to an `art/` folder and reference them here, e.g.:
+Reusable gallery template: wrap any set of images in a `.art-gallery` div,
+one `.art-item` figure per image. Update data-title / data-medium / data-year
+for each piece — those are the fields shown in the click-to-expand view.
+Lays out as a 4-column grid (wraps responsively on smaller screens).
 
-::: {layout-ncol=2}
-![Piece One](art/piece-one.jpg)
-
-![Piece Two](art/piece-two.jpg)
+::: {.art-gallery}
+<figure class="art-item" data-title="Piece Title" data-medium="Medium" data-year="Year">
+  <img src="art/folder/file.jpg" alt="Piece Title">
+</figure>
 :::
 -->
+
+## Jenga Series (2015)
+
+<div class="art-gallery">
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;1" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/1.JPG" alt="Jenga Composition No.&nbsp;1">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;2" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/2.JPG" alt="Jenga Composition No.&nbsp;2">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;3" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/3.JPG" alt="Jenga Composition No.&nbsp;3">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;4" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/4.JPG" alt="Jenga Composition No.&nbsp;4">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;5" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/5.JPG" alt="Jenga Composition No.&nbsp;5">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;6" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/6.JPG" alt="Jenga Composition No.&nbsp;6">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;7" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/7.JPG" alt="Jenga Composition No.&nbsp;7">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;8" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/8.JPG" alt="Jenga Composition No.&nbsp;8">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;9" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/9.JPG" alt="Jenga Composition No.&nbsp;9">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;10" data-medium="Graphite on paper" data-year="2015">
+    <img src="art/jenga/10.JPG" alt="Jenga Composition No.&nbsp;10">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;11" data-medium="Watercolor" data-year="2015">
+    <img src="art/jenga/11.JPG" alt="Jenga Composition No.&nbsp;11">
+  </figure>
+
+  <figure class="art-item" data-title="Jenga Composition No.&nbsp;12" data-medium="Watercolor" data-year="2015">
+    <img src="art/jenga/12.JPG" alt="Jenga Composition No.&nbsp;12">
+  </figure>
+</div>
+
+```{=html}
+<script src="art-gallery.js"></script>
+```
