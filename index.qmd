@@ -65,9 +65,10 @@ Available upon [request](mailto:john.ludlum2@gmail.com).
 I am a proponent of using AI tools to boost productivity as long as they
 are used responsibly and transparently.
 
-For my website, I use Claude Code for Quarto site configuration and writing 
-custom HTML/CSS/JS. I also use Claude Code in my personal data science projects.
+For my website, I use [Claude Code](https://claude.com/product/claude-code) 
+for Quarto site configuration and writing custom HTML/CSS/JS. 
+I also use Claude Code to help with coding in my personal projects. 
 Usage is always attributed in commit messages and project documentation.
 
-I do *not* use AI for tasks that reflect my own critical thinking and
+I do *not* use AI for tasks that reflect my critical thinking skills and
 creative ability, such as writing blog posts or making art.
