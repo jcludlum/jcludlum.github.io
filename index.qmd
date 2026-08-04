@@ -33,7 +33,7 @@ information extraction, and predictive modeling.
 
 ## Research Interests
 
-- **Deep Learning:** transformers, embedding models, autoencoders, diffusion models
+- **Deep Learning:** transformers, embedding models, diffusion models
 - **Information Retrieval:** semantic search, RAG, recommender systems
 - **Adversarial Machine Learning:** data poisoning, evasion attacks, model extraction
 - **LLM Security:** jailbreaking, prompt injection, distillation, agentic system security
@@ -51,18 +51,18 @@ Available upon [request](mailto:john.ludlum2@gmail.com).
 
 ## Hobbies
 
-- Hiking
+- Outdoor activites (hiking, fly fishing, camping)
 - Traveling
 - Cooking and baking
 - Sports (tennis, basketball, weightlifting)
 - Art (drawing, painting, visiting museums)
-- Chess ([USCF](https://ratings.uschess.org/player/16390654), [chess.com](https://www.chess.com/member/jayludz), [Lichess](https://lichess.org/@/JayLudZ))
-- Go (AGA, [OGS](https://online-go.com/player/611010/))
-- Scrabble (casual)
+- Chess (competitive OTB, [chess.com](https://www.chess.com/member/jayludz), [Lichess](https://lichess.org/@/JayLudZ))
+- Go (competitive OTB, [OGS](https://online-go.com/player/611010/))
+- Scrabble (casual OTB)
 
 ## AI Policy
 
-I am a proponent of using AI tools to boost productivity as long as they
+I am a proponent of using AI tools to boost productivity, as long as they
 are used responsibly and transparently.
 
 For my website, I use [Claude Code](https://claude.com/product/claude-code) 
@@ -70,5 +70,5 @@ for Quarto site configuration and writing custom HTML/CSS/JS.
 I also use Claude Code to help with coding in my personal projects. 
 Usage is always attributed in commit messages and project documentation.
 
-I do *not* use AI for tasks that reflect my critical thinking skills and
+I do *not* use AI for tasks that reflect my critical thinking and
 creative ability, such as writing blog posts or making art.
