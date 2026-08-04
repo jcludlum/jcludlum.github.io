@@ -15,7 +15,7 @@ Lays out as a 4-column grid (wraps responsively on smaller screens).
 :::
 -->
 
-## Jenga Series (2015)
+## Jenga Series
 
 <div class="art-gallery">
   <figure class="art-item" data-title="Jenga Composition No.&nbsp;1" data-medium="Graphite on paper" data-year="2015">
@@ -65,6 +65,36 @@ Lays out as a 4-column grid (wraps responsively on smaller screens).
   <figure class="art-item" data-title="Jenga Composition No.&nbsp;12" data-medium="Watercolor" data-year="2015">
     <img src="art/jenga/12.JPG" alt="Jenga Composition No.&nbsp;12">
   </figure>
+</div>
+
+## Solo Works
+
+<div class="art-gallery">
+
+  <figure class="art-item" data-title="Clint Eastwood" data-medium="Graphite on paper" data-year="2014">
+    <img src="art/solo/Clint Eastwood.JPG" alt="Clint Eastwood">
+  </figure>
+
+  <figure class="art-item" data-title="Donuts" data-medium="Oil pastel and graphite on paper" data-year="2014">
+    <img src="art/solo/Donuts.JPG" alt="Donuts">
+  </figure>
+
+  <figure class="art-item" data-title="Gatorade Still Life" data-medium="Oil pastel on paper" data-year="2014">
+    <img src="art/solo/Gatorade Still Life.JPG" alt="Gatorade Still Life">
+  </figure>
+
+  <figure class="art-item" data-title="Skull Still Life" data-medium="Charcoal on paper" data-year="2014">
+    <img src="art/solo/Skull Still Life.JPG" alt="Skull Still Life">
+  </figure>
+
+  <figure class="art-item" data-title="Utah State Capitol Building" data-medium="Charcoal on paper" data-year="2014">
+    <img src="art/solo/Utah State Capitol Building.JPG" alt="Utah State Capitol Building">
+  </figure>
+
+  <figure class="art-item" data-title="Venus of Urbino Study" data-medium="Graphite on paper" data-year="2014">
+    <img src="art/solo/Venus of Urbino Study.JPG" alt="Venus of Urbino Study">
+  </figure>
+
 </div>
 
 ```{=html}
