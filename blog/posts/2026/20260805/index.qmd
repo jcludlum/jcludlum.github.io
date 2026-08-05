@@ -1,0 +1,12 @@
+---
+title: "Hello World"
+date: 2026-08-05
+categories: [2026]
+---
+
+Welcome to my blog! 
+
+Here, I plan to write about a variety of topics that interest me: 
+math, data science, software development, art, and so on. 
+I will try my best to assign categories to my blog posts so you 
+(the dear reader) can filter them by what interests you.
