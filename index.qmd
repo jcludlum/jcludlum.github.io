@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
 ::: {.about-intro}
 ![](images/jcludlum.jpeg){.about-photo fig-alt="Photo of John Ludlum"}
 
-Applied research mathematician with <span id="years-exp"></span> years of experience
-using data science, machine learning, and AI to solve complex,
-open-ended problems involving document summarization,
+Applied research mathematician with <span id="years-exp"></span> years of 
+professional experience using data science, machine learning, and AI 
+to solve complex, open-ended problems involving document summarization,
 information extraction, and predictive modeling.
 
 <p class="about-motto">"Jack of ~~all~~ some trades, master of none."</p>
