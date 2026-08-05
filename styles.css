@@ -95,6 +95,91 @@ body.quarto-dark .art-item {
   border-radius: 3px;
 }
 
+/* ---- Project cards ---- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.project-card {
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.quarto-dark .project-card {
+  background: #222;
+  border-color: #444;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-thumbnail {
+  display: block;
+  margin: -1.25rem -1.5rem 1rem;
+}
+
+.project-thumbnail img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 7px 7px 0 0;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.project-card h3 a {
+  text-decoration: none;
+}
+
+.project-description {
+  margin: 0 0 1rem;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.skill-bubble {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: inherit;
+  background: #f1f3f5;
+  border: 1px solid #dee2e6;
+  border-radius: 999px;
+}
+
+body.quarto-dark .skill-bubble {
+  background: #333;
+  border-color: #555;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 /* Lightbox overlay used by art-gallery.js */
 
 .art-lightbox {

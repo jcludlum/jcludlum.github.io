@@ -1,3 +1,30 @@
 ---
 title: "Projects"
 ---
+
+<!--
+To add a thumbnail image to a project card, insert this as the first
+child of .project-card, right before the <h3>:
+
+<div class="project-thumbnail">
+  <img src="images/projects/your-image.png" alt="Project name screenshot">
+</div>
+
+Note: raw HTML inside these divs must stay flush-left (no leading
+spaces) — indenting 4+ spaces gets misread as a Markdown code block.
+-->
+
+<div class="project-grid">
+<div class="project-card">
+<h3><a href="https://fc-analytics.streamlit.app/" target="_blank" rel="noopener">Fine Cooking Analytics</a></h3>
+<p class="project-description">Streamlit app for browsing and searching recipes digitized from <em>Fine Cooking</em> magazine (1994&ndash;2019).</p>
+<div class="project-skills">
+<span class="skill-bubble">Python</span>
+<span class="skill-bubble">Streamlit</span>
+<span class="skill-bubble">OCR</span>
+<span class="skill-bubble">Embedding</span>
+<span class="skill-bubble">UMAP</span>
+</div>
+<a class="project-link" href="https://github.com/jcludlum/fc-analytics" target="_blank" rel="noopener">GitHub repo &rarr;</a>
+</div>
+</div>
