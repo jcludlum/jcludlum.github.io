@@ -24,6 +24,8 @@ Applied research mathematician with <span id="years-exp"></span> years of experi
 using data science, machine learning, and AI to solve complex,
 open-ended problems involving document summarization,
 information extraction, and predictive modeling.
+
+<p class="about-motto">"Jack of ~~all~~ some trades, master of none."</p>
 :::
 
 ## Education
@@ -51,11 +53,11 @@ Available upon [request](mailto:john.ludlum2@gmail.com).
 
 ## Hobbies
 
-- Outdoor activites (hiking, fly fishing, camping)
-- Traveling
-- Cooking and baking
-- Sports (tennis, basketball, weightlifting)
-- Art (drawing, painting, visiting museums)
+- Hiking, fly fishing, camping
+- Traveling, sightseeing
+- Cooking, baking, trying new restaurants
+- Tennis, basketball, weightlifting
+- Drawing, painting, visiting art museums
 - Chess (competitive OTB, [chess.com](https://www.chess.com/member/jayludz), [Lichess](https://lichess.org/@/JayLudZ))
 - Go (competitive OTB, [OGS](https://online-go.com/player/611010/))
 - Scrabble (casual OTB)

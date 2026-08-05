@@ -11,6 +11,16 @@
   border-radius: 8px;
 }
 
+.about-motto {
+  margin: 1rem 0 0;
+  font-style: italic;
+  color: #6c757d;
+}
+
+body.quarto-dark .about-motto {
+  color: #adb5bd;
+}
+
 /* ---- Reusable art gallery (paged carousel, see art-gallery.js) ---- */
 
 .art-gallery {
