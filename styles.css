@@ -1,0 +1,278 @@
+/* Add custom site styles here. */
+
+.about-intro {
+  overflow: hidden; /* clearfix so the floated photo doesn't bleed past the intro paragraph */
+}
+
+.about-photo {
+  float: right;
+  width: 160px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+.about-motto {
+  margin: 1rem 0 0;
+  font-style: italic;
+  color: #6c757d;
+}
+
+body.quarto-dark .about-motto {
+  color: #adb5bd;
+}
+
+/* ---- Reusable art gallery (paged carousel, see art-gallery.js) ---- */
+
+.art-gallery {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.art-gallery-viewport {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.art-gallery-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.art-gallery-cell {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding: 0 0.5rem;
+}
+
+.art-gallery-arrow {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body.quarto-dark .art-gallery-arrow {
+  background: #222;
+  border-color: #444;
+}
+
+.art-gallery-arrow:hover:not(:disabled) {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.art-gallery-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.art-item {
+  margin: 0;
+  padding: 6px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.quarto-dark .art-item {
+  background: #222;
+  border-color: #444;
+}
+
+.art-item:hover,
+.art-item:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.art-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* ---- Project cards ---- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.project-card {
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.quarto-dark .project-card {
+  background: #222;
+  border-color: #444;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-thumbnail {
+  display: block;
+  margin: -1.25rem -1.5rem 1rem;
+}
+
+.project-thumbnail img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 7px 7px 0 0;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.project-card h3 a {
+  text-decoration: none;
+}
+
+.project-description {
+  margin: 0 0 1rem;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.skill-bubble {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: inherit;
+  background: #f1f3f5;
+  border: 1px solid #dee2e6;
+  border-radius: 999px;
+}
+
+body.quarto-dark .skill-bubble {
+  background: #333;
+  border-color: #555;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Lightbox overlay used by art-gallery.js */
+
+.art-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.art-lightbox.is-open {
+  display: flex;
+}
+
+.art-lightbox-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+body.quarto-dark .art-lightbox-content {
+  background: #222;
+}
+
+.art-lightbox-image {
+  flex: 1 1 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+}
+
+.art-lightbox-image img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.art-lightbox-details {
+  flex: 0 0 320px;
+  padding: 3rem 1.5rem 1.5rem;
+  overflow-y: auto;
+}
+
+.art-lightbox-title {
+  display: block;
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.art-lightbox-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  line-height: 1;
+  font-size: 2rem;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  .art-lightbox-content {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .art-lightbox-details {
+    flex: none;
+  }
+}

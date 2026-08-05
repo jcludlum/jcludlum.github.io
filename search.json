@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Fine Cooking Analytics\n\n\nStreamlit app for searching recipes from Fine Cooking magazine (1994–2019).\n\n\nPython Streamlit OCR Embedding UMAP"
+  },
+  {
+    "objectID": "blog/posts/2026/20260805/index.html",
+    "href": "blog/posts/2026/20260805/index.html",
+    "title": "Hello World",
+    "section": "",
+    "text": "Welcome to my blog!\nHere, I plan to write about a variety of topics that interest me: math, data science, software development, art, and so on. I will try my best to assign categories to my blog posts so you (the dear reader) can filter them by what interests you."
+  },
+  {
+    "objectID": "art.html#solo-works",
+    "href": "art.html#solo-works",
+    "title": "Art",
+    "section": "Solo Works",
+    "text": "Solo Works"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Hello World\n\n\n\n2026\n\n\n\n\n\n\n\n\n\nAug 5, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "John Ludlum",
+    "section": "",
+    "text": "Applied research mathematician with  years of experience using data science, machine learning, and AI to solve complex, open-ended problems involving document summarization, information extraction, and predictive modeling.\n\n“Jack of all some trades, master of none.”"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "John Ludlum",
+    "section": "Education",
+    "text": "Education\n\nWestern Governors University — M.S. Data Analytics (June 2021)\nUniversity of Utah — B.S. Mathematics, B.A. Art History, French Minor (May 2019)"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "John Ludlum",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nDeep Learning: transformers, embedding models, diffusion models\nInformation Retrieval: semantic search, RAG, recommender systems\nAdversarial Machine Learning: data poisoning, evasion attacks, model extraction\nLLM Security: jailbreaking, prompt injection, distillation, agentic system security"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "John Ludlum",
+    "section": "Skills",
+    "text": "Skills\n\nMath Specialties: multivariable calculus, linear algebra, probability & statistics, cryptography\nComputer Programming: Python, R, SQL, SAS, Git, Bash\nDevOps: Docker, Kubernetes, GitLab CI/CD\nAI Technologies: OpenAI API, LangChain, LlamaIndex, FastMCP, AutoGen, Inspect AI, Harbor, Claude Code"
+  },
+  {
+    "objectID": "index.html#resume-cv",
+    "href": "index.html#resume-cv",
+    "title": "John Ludlum",
+    "section": "Resume + CV",
+    "text": "Resume + CV\nAvailable upon request."
+  },
+  {
+    "objectID": "index.html#hobbies",
+    "href": "index.html#hobbies",
+    "title": "John Ludlum",
+    "section": "Hobbies",
+    "text": "Hobbies\n\nHiking, fly fishing, camping\nTraveling, sightseeing\nCooking, baking, trying new restaurants\nTennis, basketball, weightlifting\nDrawing, painting, visiting art museums\nChess (competitive OTB, chess.com, Lichess)\nGo (competitive OTB, OGS)\nScrabble (casual OTB)"
+  },
+  {
+    "objectID": "index.html#ai-policy",
+    "href": "index.html#ai-policy",
+    "title": "John Ludlum",
+    "section": "AI Policy",
+    "text": "AI Policy\nI am a proponent of using AI tools to boost productivity, as long as they are used responsibly and transparently.\nFor my website, I use Claude Code for Quarto site configuration and writing custom HTML/CSS/JS. I also use Claude Code to help with coding in my personal projects. Usage is always attributed in commit messages and project documentation.\nI do not use AI for tasks that reflect my critical thinking and creative ability, such as writing blog posts or making art."
+  }
+]

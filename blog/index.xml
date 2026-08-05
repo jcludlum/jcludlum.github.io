@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>John Ludlum</title>
+<link>https://jcludlum.github.io/blog/</link>
+<atom:link href="https://jcludlum.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>Applied Research Mathematician</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Wed, 05 Aug 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Hello World</title>
+  <link>https://jcludlum.github.io/blog/posts/2026/20260805/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Welcome to my blog!</p>
+<p>Here, I plan to write about a variety of topics that interest me: math, data science, software development, art, and so on. I will try my best to assign categories to my blog posts so you (the dear reader) can filter them by what interests you.</p>
+
+
+
+ ]]></description>
+  <category>2026</category>
+  <guid>https://jcludlum.github.io/blog/posts/2026/20260805/</guid>
+  <pubDate>Wed, 05 Aug 2026 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
