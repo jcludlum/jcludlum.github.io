@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-08-08">
 
-<title>Art – John Ludlum</title>
+<title>Determinants, Permutations, Oh My! – John Ludlum</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,27 +30,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b9268bc799fbaeaa4ad04495d18e55d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-3428a0072eb33403a7d59db7a95e5b7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b9268bc799fbaeaa4ad04495d18e55d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-aed81832c13fe1d1890d1af0c231ec5a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-dark-7b7314b3ba07610eba8e9898515a1a0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../site_libs/bootstrap/bootstrap-aed81832c13fe1d1890d1af0c231ec5a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,11 +84,40 @@ ul.task-list li input[type="checkbox"] {
   };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -262,19 +292,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
+    <a class="nav-link" href="../../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./art.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../art.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
 </ul>
@@ -306,21 +336,32 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Art</h1>
-</div>
+<h1 class="title">Determinants, Permutations, Oh My!</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">2026</div>
+    <div class="quarto-category">math</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 8, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -330,85 +371,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!--
-Reusable gallery template: wrap any set of images in a `.art-gallery` div,
-one `.art-item` figure per image. Update data-title / data-medium / data-year
-for each piece — those are the fields shown in the click-to-expand view.
-Lays out as a 4-column grid (wraps responsively on smaller screens).
-
-::: {.art-gallery}
-<figure class="art-item" data-title="Piece Title" data-medium="Medium" data-year="Year">
-  <img src="art/folder/file.jpg" alt="Piece Title">
-</figure>
-:::
--->
-<section id="jenga-series" class="level2">
-<h2 class="anchored" data-anchor-id="jenga-series">Jenga Series</h2>
-<div class="art-gallery">
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;1" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/1.JPG" alt="Jenga Composition No.&nbsp;1" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;2" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/2.JPG" alt="Jenga Composition No.&nbsp;2" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;3" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/3.JPG" alt="Jenga Composition No.&nbsp;3" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;4" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/4.JPG" alt="Jenga Composition No.&nbsp;4" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;5" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/5.JPG" alt="Jenga Composition No.&nbsp;5" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;6" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/6.JPG" alt="Jenga Composition No.&nbsp;6" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;7" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/7.JPG" alt="Jenga Composition No.&nbsp;7" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;8" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/8.JPG" alt="Jenga Composition No.&nbsp;8" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;9" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/9.JPG" alt="Jenga Composition No.&nbsp;9" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;10" data-medium="Graphite on paper" data-year="2015">
-<img src="art/jenga/10.JPG" alt="Jenga Composition No.&nbsp;10" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;11" data-medium="Watercolor" data-year="2015">
-<img src="art/jenga/11.JPG" alt="Jenga Composition No.&nbsp;11" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Jenga Composition No.&nbsp;12" data-medium="Watercolor" data-year="2015">
-<img src="art/jenga/12.JPG" alt="Jenga Composition No.&nbsp;12" class="figure-img">
-</figure>
-</div>
-</section>
-<section id="solo-works" class="level2">
-<h2 class="anchored" data-anchor-id="solo-works">Solo Works</h2>
-<div class="art-gallery">
-<figure class="art-item figure" data-title="Clint Eastwood" data-medium="Graphite on paper" data-year="2014">
-<img src="art/solo/Clint Eastwood.JPG" alt="Clint Eastwood" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Donuts" data-medium="Oil pastel and graphite on paper" data-year="2014">
-<img src="art/solo/Donuts.JPG" alt="Donuts" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Gatorade Still Life" data-medium="Oil pastel on paper" data-year="2014">
-<img src="art/solo/Gatorade Still Life.JPG" alt="Gatorade Still Life" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Skull Still Life" data-medium="Charcoal on paper" data-year="2014">
-<img src="art/solo/Skull Still Life.JPG" alt="Skull Still Life" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Utah State Capitol Building" data-medium="Charcoal on paper" data-year="2014">
-<img src="art/solo/Utah State Capitol Building.JPG" alt="Utah State Capitol Building" class="figure-img">
-</figure>
-<figure class="art-item figure" data-title="Venus of Urbino Study" data-medium="Graphite on paper" data-year="2014">
-<img src="art/solo/Venus of Urbino Study.JPG" alt="Venus of Urbino Study" class="figure-img">
-</figure>
-</div>
-<script src="art-gallery.js"></script>
+<p>Matrix determinants have always been a rather mysterious math concept to me.</p>
+<p>I think, like many students, I first encountered determinants in my undergraduate linear algebra class. Our textbook<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> gave the <a href="https://en.wikipedia.org/wiki/Laplace_expansion">Laplace expansion</a> method of computing determinants as the definition of determinants, making them seem like an abstract property of square matrices which just so happens to be useful in subsequent theorems like the fact that a square matrix <span class="math inline">\(A\)</span> is invertible if and only if <span class="math inline">\(\operatorname{det}(A) \neq 0\)</span>. Only later did I learn about the relationship between determinants and the volume of <a href="https://en.wikipedia.org/wiki/Parallelepiped#Parallelotope">parallelotopes</a> formed from the columns of square matrices, developing some much-needed geometric intuition.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;D. Lay, S. Lay and J. McDonald. <em>Linear Algebra and its Applications</em>, 5th ed.&nbsp;Pearson Education, 2016.</p></div><div id="fn2"><p><sup>2</sup>&nbsp;The Princeton Review. <em>Cracking the GRE Mathematics Subject Test</em>, 4th ed.&nbsp;Random House, 2010.</p></div></div><p>However, while studying for the GRE Math Subject Test,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> I stumbled across a fascinating formula for computing determinants involving permutations which I had never seen before.</p>
+<p>Let <span class="math inline">\([n] = \{1, 2, \ldots, n\}\)</span> where <span class="math inline">\(n\)</span> is a positive integer and let <span class="math inline">\(\sigma : [n] \rightarrow [n]\)</span> be a permutation.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> First, we define <span class="math inline">\(\sigma\)</span> to be <em>odd</em> if it takes an odd number of transpositions of adjacent elements to rearrange the sequence <span class="math inline">\((1, 2, \ldots, n)\)</span> into the sequence <span class="math inline">\((\sigma(1), \sigma(2), \ldots, \sigma(n))\)</span>. If it takes an even number of transpositions, then <span class="math inline">\(\sigma\)</span> is <em>even</em>.</p>
+<div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;Recall that a permutation is a bijection (function that is one-to-one and onto) from <span class="math inline">\([n]\)</span> to itself. Intuitively, permutations represent rearrangements of <span class="math inline">\(n\)</span> distinct objects.</p></div></div><p>For example, suppose <span class="math inline">\(\sigma : [4] \rightarrow [4]\)</span> is the permutation <span class="math display">\[ \sigma(1) = 2 \quad \sigma(2) = 4 \quad \sigma(3) = 1 \quad \sigma(4) = 3 \]</span></p>
+<p>Starting with the sequence <span class="math inline">\((1, 2, 3, 4)\)</span>, it takes three transpositions of adjacent elements to reach <span class="math inline">\((\sigma(1), \sigma(2), \sigma(3), \sigma(4)) = (2, 4, 1, 3)\)</span>: <span class="math display">\[
+\begin{aligned}
+(\underbrace{1,2}_{\rightleftarrows},3,4) &amp;\xrightarrow{1} (2,1,3,4) \\
+(2,1,\underbrace{3,4}_{\rightleftarrows}) &amp;\xrightarrow{2} (2,1,4,3) \\
+(2,\underbrace{1,4}_{\rightleftarrows},3) &amp;\xrightarrow{3} (2,4,1,3)
+\end{aligned}
+\]</span></p>
+<p>Therefore <span class="math inline">\(\sigma\)</span> is odd. Now for the cool part: let <span class="math inline">\(A\)</span> be an <span class="math inline">\(n \times n\)</span> matrix with entries <span class="math inline">\(a_{ij}\)</span> and let <span class="math inline">\(S_n\)</span> be the set of all permutations of <span class="math inline">\(n\)</span> elements. For any permutation <span class="math inline">\(\sigma \in S_n\)</span>, define a sign function <span class="math inline">\(\operatorname{sgn}(\sigma)\)</span> by <span class="math display">\[
+\operatorname{sgn}(\sigma) =
+\begin{cases}
++1 &amp; \text{if } \sigma \text{ is even} \\
+-1 &amp; \text{if } \sigma \text{ is odd}
+\end{cases}
+\]</span></p>
+<p>Then a formula for the determinant of <span class="math inline">\(A\)</span> is given by <span id="eq-det"><span class="math display">\[ \operatorname{det}(A) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^{n} a_{i \sigma(i)}  \tag{1}\]</span></span></p>
+<p>For example, suppose we have a generic <span class="math inline">\(2 \times 2\)</span> matrix <span class="math inline">\(A = \begin{bmatrix} a_{11} &amp; a_{12} \\ a_{21} &amp; a_{22} \end{bmatrix}\)</span> whose determinant is <span class="math inline">\(a_{11}a_{22} - a_{12}a_{21}\)</span>. There are only two possible permutations for <span class="math inline">\(n=2\)</span>:</p>
+<p><span class="math display">\[
+\begin{array}{c|cc}
+i &amp; \sigma_1 &amp; \sigma_2 \\
+\hline
+1 &amp; 1 &amp; 2 \\
+2 &amp; 2 &amp; 1 \\
+\end{array}
+\]</span></p>
+<p>Observe that the identity permutation <span class="math inline">\(\sigma_1\)</span> is even because it takes zero transpositions to obtain <span class="math inline">\((\sigma_1(1), \sigma_1(2))=(1,2)\)</span> from <span class="math inline">\((1,2)\)</span>. On the other hand, <span class="math inline">\(\sigma_2\)</span> is odd because it takes one transposition (the only one possible) to obtain <span class="math inline">\((\sigma_2(1), \sigma_2(2))=(2,1)\)</span> from <span class="math inline">\((1,2)\)</span>. Hence, according to <a href="#eq-det" class="quarto-xref">Equation&nbsp;1</a>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\operatorname{det}(A) &amp;= \operatorname{sgn}(\sigma_1)a_{1 \sigma_1(1)}a_{2 \sigma_1(2)} + \operatorname{sgn}(\sigma_2)a_{1 \sigma_2(1)}a_{2 \sigma_2(2)} \\
+&amp;= +1 \cdot a_{11} a_{22} + (-1) \cdot a_{12} a_{21} \\
+&amp;= a_{11}a_{22} - a_{12}a_{21}
+\end{aligned}
+\]</span></p>
+<p>which agrees with the formula for the determinant of a <span class="math inline">\(2 \times 2\)</span> matrix given earlier.</p>
+<p><a href="#eq-det" class="quarto-xref">Equation&nbsp;1</a> is a remarkable, but unfortunately quite impractical,<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> method for computing determinants. I had no idea there was a connection between determinants (a linear algebra topic) and permutations (a combinatorics topic). In a future blog post, I might do some research and see if I can find a proof for <a href="#eq-det" class="quarto-xref">Equation&nbsp;1</a>, as well as shed some light on where this surprising intersection of linear algebra and combinatorics originated.</p>
 
 
-</section>
+<div class="no-row-height column-margin column-container"><div id="fn4"><p><sup>4</sup>&nbsp;The amount of work to compute <span class="math inline">\(\operatorname{sgn}(\sigma)\)</span> for all <span class="math inline">\(\sigma \in S_n\)</span> is infeasible for large values of <span class="math inline">\(n\)</span> because <span class="math inline">\(|{S_n}| = n!\)</span></p></div></div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -836,7 +840,7 @@ Lays out as a 4-column grid (wraps responsively on smaller screens).
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="./blog/index.xml">
+    <a class="nav-link" href="../../../../blog/index.xml">
       <i class="bi bi-rss" role="img">
 </i> 
     </a>
