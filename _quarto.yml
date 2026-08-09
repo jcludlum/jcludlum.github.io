@@ -41,3 +41,10 @@ format:
     toc: false
     grid:
       body-width: 850px
+    include-in-header:
+      text: |
+        <script>
+          window.MathJax = {
+            output: { linebreaks: { inline: false } }
+          };
+        </script>

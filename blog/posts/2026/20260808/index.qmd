@@ -1,0 +1,76 @@
+---
+title: "Determinants, Permutations, Oh My!"
+date: 2026-08-08
+categories: [2026, math]
+format:
+  html:
+    grid:
+      margin-width: 350px
+reference-location: margin
+citation-location: margin
+---
+
+Matrix determinants have always been a rather mysterious math concept to me. 
+
+I think, like many students, I first encountered determinants in my undergraduate linear algebra class. Our textbook[^1] gave the [Laplace expansion](https://en.wikipedia.org/wiki/Laplace_expansion) method of computing determinants as the definition of determinants, making them seem like an abstract property of square matrices which just so happens to be useful in subsequent theorems like the fact that a square matrix $A$ is invertible if and only if $\operatorname{det}(A) \neq 0$. Only later did I learn about the relationship between determinants and the volume of [parallelotopes](https://en.wikipedia.org/wiki/Parallelepiped#Parallelotope) formed from the columns of square matrices, developing some much-needed geometric intuition.
+
+However, while studying for the GRE Math Subject Test,[^2] I stumbled across a fascinating formula for computing determinants involving permutations which I had never seen before.
+
+Let $[n] = \{1, 2, \ldots, n\}$ where $n$ is a positive integer and let $\sigma : [n] \rightarrow [n]$ be a permutation.[^3] First, we define $\sigma$ to be *odd* if it takes an odd number of transpositions of adjacent elements to rearrange the sequence $(1, 2, \ldots, n)$ into the sequence $(\sigma(1), \sigma(2), \ldots, \sigma(n))$. If it takes an even number of transpositions, then $\sigma$ is *even*.
+
+For example, suppose $\sigma : [4] \rightarrow [4]$ is the permutation
+$$ \sigma(1) = 2 \quad \sigma(2) = 4 \quad \sigma(3) = 1 \quad \sigma(4) = 3 $$
+
+Starting with the sequence $(1, 2, 3, 4)$, it takes three transpositions of adjacent elements to reach $(\sigma(1), \sigma(2), \sigma(3), \sigma(4)) = (2, 4, 1, 3)$:
+$$
+\begin{aligned}
+(\underbrace{1,2}_{\rightleftarrows},3,4) &\xrightarrow{1} (2,1,3,4) \\
+(2,1,\underbrace{3,4}_{\rightleftarrows}) &\xrightarrow{2} (2,1,4,3) \\
+(2,\underbrace{1,4}_{\rightleftarrows},3) &\xrightarrow{3} (2,4,1,3)
+\end{aligned}
+$$
+
+Therefore $\sigma$ is odd. Now for the cool part: let $A$ be an $n \times n$ matrix with entries $a_{ij}$ and let $S_n$ be the set of all permutations of $n$ elements. For any permutation $\sigma \in S_n$, define a sign function $\operatorname{sgn}(\sigma)$ by
+$$
+\operatorname{sgn}(\sigma) =
+\begin{cases}
++1 & \text{if } \sigma \text{ is even} \\
+-1 & \text{if } \sigma \text{ is odd}
+\end{cases}
+$$
+
+Then a formula for the determinant of $A$ is given by
+$$ \operatorname{det}(A) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^{n} a_{i \sigma(i)} $$ {#eq-det}
+
+For example, suppose we have a generic $2 \times 2$ matrix $A = \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix}$ whose determinant is $a_{11}a_{22} - a_{12}a_{21}$. There are only two possible permutations for $n=2$:
+
+$$
+\begin{array}{c|cc}
+i & \sigma_1 & \sigma_2 \\
+\hline
+1 & 1 & 2 \\
+2 & 2 & 1 \\
+\end{array}
+$$
+
+Observe that the identity permutation $\sigma_1$ is even because it takes zero transpositions to obtain $(\sigma_1(1), \sigma_1(2))=(1,2)$ from $(1,2)$. On the other hand, $\sigma_2$ is odd because it takes one transposition (the only one possible) to obtain $(\sigma_2(1), \sigma_2(2))=(2,1)$ from $(1,2)$. Hence, according to @eq-det:
+
+$$ 
+\begin{aligned}
+\operatorname{det}(A) &= \operatorname{sgn}(\sigma_1)a_{1 \sigma_1(1)}a_{2 \sigma_1(2)} + \operatorname{sgn}(\sigma_2)a_{1 \sigma_2(1)}a_{2 \sigma_2(2)} \\
+&= +1 \cdot a_{11} a_{22} + (-1) \cdot a_{12} a_{21} \\
+&= a_{11}a_{22} - a_{12}a_{21}
+\end{aligned}
+$$
+
+which agrees with the formula for the determinant of a $2 \times 2$ matrix given earlier.
+
+@eq-det is a remarkable, but unfortunately quite impractical,[^4] method for computing determinants. I had no idea there was a connection between determinants (a linear algebra topic) and permutations (a combinatorics topic). In a future blog post, I might do some research and see if I can find a proof for @eq-det, as well as shed some light on where this surprising intersection of linear algebra and combinatorics originated.
+
+[^1]: D. Lay, S. Lay and J. McDonald. *Linear Algebra and its Applications*, 5th ed. Pearson Education, 2016.
+
+[^2]: The Princeton Review. *Cracking the GRE Mathematics Subject Test*, 4th ed. Random House, 2010.
+
+[^3]: Recall that a permutation is a bijection (function that is one-to-one and onto) from $[n]$ to itself. Intuitively, permutations represent rearrangements of $n$ distinct objects.
+
+[^4]: The amount of work to compute $\operatorname{sgn}(\sigma)$ for all $\sigma \in S_n$ is infeasible for large values of $n$ because $|{S_n}| = n!$
