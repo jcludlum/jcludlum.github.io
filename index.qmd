@@ -1,5 +1,5 @@
 ---
-title: "John Ludlum"
+title: "John C. Ludlum"
 ---
 
 ```{=html}
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ```
 
 ::: {.about-intro}
-![](images/jcludlum.jpeg){.about-photo fig-alt="Photo of John Ludlum"}
+![](images/jcludlum.jpeg){.about-photo fig-alt="Photo of John C. Ludlum"}
 
 Applied research mathematician with <span id="years-exp"></span> years of 
 professional experience using data science, machine learning, and AI 
@@ -45,7 +45,7 @@ information extraction, and predictive modeling.
 - **Math Specialties:** multivariable calculus, linear algebra, probability & statistics, cryptography
 - **Computer Programming:** Python, R, SQL, SAS, Git, Bash
 - **DevOps:** Docker, Kubernetes, GitLab CI/CD
-- **AI Technologies:** OpenAI API, LangChain, LlamaIndex, FastMCP, AutoGen, Inspect AI, Harbor, Claude Code
+- **AI Technologies:** LangChain, LlamaIndex, FastMCP, AutoGen, Inspect, Harbor, Claude Code
 
 ## Resume + CV
 

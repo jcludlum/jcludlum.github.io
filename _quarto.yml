@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "John Ludlum"
+  title: "John C. Ludlum"
   description: "Applied Research Mathematician"
   site-url: "https://jcludlum.github.io"
 
