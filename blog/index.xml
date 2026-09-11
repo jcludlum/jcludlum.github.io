@@ -5,7 +5,7 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>John Ludlum</title>
+<title>John C. Ludlum</title>
 <link>https://jcludlum.github.io/blog/</link>
 <atom:link href="https://jcludlum.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Applied Research Mathematician</description>
